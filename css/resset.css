@@ -1,0 +1,40 @@
+/* Box sizing rules */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding */
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set default font size and line height */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Remove list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove text decoration from links */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Remove default form styles */
+  button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+  
+  /* Reset table styles */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }

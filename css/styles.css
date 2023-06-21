@@ -1,0 +1,342 @@
+/* Importing Roboto font family from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Setting some global variables */
+:root {
+  --blue: #1663bc;
+  --white: #ffffff;
+  --font-size: 16px;
+}
+
+/* Applying Roboto font family to the entire document */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--font-size);
+}
+
+/* Styling for the navbar */
+.navbar {
+  /* Fixed position at the top of the page */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Displaying the contents of the navbar in a row with space between each element */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Setting the background color to blue and the text color to white */
+  background-color: var(--blue);
+  color: white;
+  /* Setting the height of the navbar to 90 pixels */
+  height: 90px;
+  /* Removing the bullet points from the navbar list */
+  list-style-type: none;
+  /* Adding some padding to the left and right of the navbar */
+  padding: 0 20px;
+}
+
+/* Styling for the delete account button */
+.delete-account-button {
+  /* Displaying the button inline with some padding */
+  display: inline-block;
+  padding: 5px 10px;
+  /* Making the text bold and centering it */
+  font-weight: bold;
+  text-align: center;
+  /* Setting the text color to white and the background color to transparent */
+  color: var(--white);
+  background-color: transparent;
+  /* Adding a white border with a 15px border radius and a cursor pointer */
+  border: 2px solid var(--white);
+  border-radius: 15px;
+  cursor: pointer;
+  /* Setting the font size to 20 pixels */
+  font-size: 1.25em;
+}
+
+/* Styling for the delete account button when hovering over it */
+.delete-account-button:hover {
+  /* Changing the text color and border color to a lighter shade of white */
+  color: rgba(224, 224, 224, 0.879);
+  background-color: transparent;
+  border: 2px solid rgba(224, 224, 224, 0.879);
+}
+
+/* incon button container */
+
+/* Styling for the icon buttons */
+.icon-buttons {
+  /* Fixed position at the bottom of the page */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Displaying the contents of the icon buttons in a row with even space between each element */
+  display: flex;
+  gap: 20px;
+  /* Setting the background color to blue and adding some padding */
+  background-color: var(--blue);
+  padding: 15px;
+  justify-content: space-around;
+  /* Adding a black border */
+  border: 1px solid black;
+}
+
+/* Styling for the icon button */
+.button {
+  /* Displaying the button contents in the center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Setting the width and height to 45 pixels with no border */
+  width: 45px;
+  height: 45px;
+  border: none;
+  /* Adding a 50% border radius and setting the background color to white and text to blue */
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--blue);
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Style for button hover state */
+.button:hover {
+  color: red;
+}
+f
+
+/* Style for button-delete hover state */
+.button-delete:hover {
+  color: red;
+}
+
+/* Style for the logo section */
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Style for the logo element */
+.logo,
+.logo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: #1663bc;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Style for a larger logo element */
+.logo2 {
+  width: 75px;
+  height: 75px;
+  margin: 10px auto;
+}
+
+/* Style for the logo text */
+.logo-text {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* Style for the login container */
+.login-container h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+/* Hide the username label */
+label[for="username"] {
+  display: none;
+}
+
+/* Style for the form container */
+form {
+  max-width: 1000px;
+  margin: 60px auto 140px auto;
+  padding: 0 20px;
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0 0 2px 10px;
+}
+
+/* Style for textareas */
+textarea {
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 1.2em !important;
+  border: 2px solid #4c548f;
+  border-radius: 3px;
+  color: rgb(64, 64, 64);
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+/* Style for placeholder text */
+::placeholder {
+  color: rgb(139, 137, 137);
+  font-size: 0.875em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Style for an active element */
+.active {
+  border: 5px solid red;
+  color: rgb(0, 0, 0);
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+
+/* Style for the greeting section */
+#greeting {
+  margin-top: 150px;
+  text-align: center;
+  color: var(--blue);
+  font-size: 1.25em;
+}
+
+/* Style for a span element inside the greeting section */
+#greeting span {
+  color: black;
+}
+
+/* Style for the form container */
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Styles for email input field */
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 1em;
+}
+
+/* Styles for submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  width: 100%;
+  color: var(--white);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Styles for delete account button */
+  .delete-account-button {
+    display: inline-block;
+    padding: 4px 8px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.75em;
+  }
+
+  .logo-text {
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+
+  /* Styles for greeting text */
+  #greeting {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 0.625em;
+    overflow-wrap: break-word;
+  }
+
+  /* Styles for span inside greeting text */
+  #greeting span {
+    color: black;
+    font-size: 1.5em;
+  }
+
+  /* Styles for icon buttons */
+  .icon-buttons {
+    background-color: var(--blue);
+    padding: 10px;
+  }
+
+  /* Styles for generic button */
+  .button {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Styles for login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styles for background of login container and body */
+.bg-login,
+body {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+/* Styles for footer */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+  color: gray;
+}
+
+/* Media queries for landscape orientation and specific device width */
+@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 1000px) {
+  /* Styles for footer */
+  footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    color: gray;
+  }
+}
