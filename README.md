@@ -1,5 +1,8 @@
 # Time Planner
 
+![alt text](https://nickerson.io/assets/maxresdefault-32055ff9.jpg)
+
+
 The Time Planner app is a JavaScript-based application that provides an efficient way to meticulously plan and organize your day. With this app, you can optimize your productivity by utilizing precise 15-minute intervals for scheduling your tasks and activities. To ensure data privacy and accessibility, all information is securely stored locally on your computer using local storage.
 
 ## Features
